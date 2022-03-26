@@ -27,7 +27,7 @@ f = open("ComteLegendesDatasets.txt", "a")
 i = 0
 txt = ""
 for i in range(91) :
-    getContent("https://www.iletaitunehistoire.com/genres/contes-et-legendes/lire/biblidcon_0"+ str(i) +"#histoire")
+    getContent("url_page"+ str(i) +"#histoire")
     #print("https://www.iletaitunehistoire.com/genres/contes-et-legendes/lire/biblidcon_0"+ str(i) +"#histoire")
 
 f.close()
