@@ -96,24 +96,14 @@ def map_network(pool_size=255):
 def getGoogleHomeIP():
     for ip in map_network():
         if getHost(ip) == "192.168.27.141" :
-            GoogleHome(host=ip).say(text="You have been hacked by 100 lines of code", lang='en-GB')
+            GoogleHome(host=ip).say(text="say samething to your ggle home", lang='en-GB')
             return ip
-
-def tamere():
-    
-    # define variables
-    s = ""
-    file = "file.mp3"
-    # initialize tts, create mp3 and play
-    tts = gTTS(s, lang="fr")
-    tts.save("hello.mp3")
-    playsound("hello.mp3")
 
 if __name__ == '__main__':
     #print(getHost("192.168.1.29"))
     print('Mapping...')
-    #lst = map_network()
-    #print(getGoogleHomeIP())
-    #map_network()
-    tamere()
+    lst = map_network()
+    print(getGoogleHomeIP())
+    map_network()
+    
     
